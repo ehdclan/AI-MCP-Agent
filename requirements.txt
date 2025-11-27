@@ -1,0 +1,9 @@
+langchain
+openai
+azure-cognitiveservices-speech
+scikit-learn
+requests
+langchain-openai
+langchain-core
+langchain-classic
+python-dotenv
