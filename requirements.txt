@@ -1,6 +1,5 @@
 langchain
 openai
-azure-cognitiveservices-speech
 scikit-learn
 requests
 langchain-openai
