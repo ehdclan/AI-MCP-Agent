@@ -24,6 +24,8 @@ accounts = {
 
 while True:
     user_input = input("User: ")
+    if user_input.lower() in ["exit", "quit"]:
+        break
 
     intent = classify_intent(user_input)
 

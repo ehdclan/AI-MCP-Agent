@@ -34,13 +34,25 @@ def extract_account_id(text: str):
     return match.group(1) if match else None
 
 def check_balance(account_id: str):
-    acct = accounts.get(extract_account_id(account_id))
+    extracted_id = extract_account_id(account_id)
+    acct = accounts.get(extracted_id)
     if not acct:
-        return {'error': "Account not found."}
+        return {'error': "Account not found. Please provide a valid 3-digit account number."}
+
+    return {
+        'account_id': extracted_id,
+        'name': acct['name'],
+        'balance': acct['balance'],
+        'message': f"Account holder: {acct['name']}, Balance: ₦{acct['balance']:,}"
+    }
     
 def report_card_issues(account_id: str):
     #simulate blocking card
-    return {"status": "blocked", "account_id": account_id, "next_step": "Collect new card in 48 hours"}
+    extracted_id = extract_account_id(account_id)
+    return {"status": "blocked",
+            "account_id": extracted_id, 
+            "next_step": "Collect new card in 48 hours"
+            }
 
 def unsupported(text: str):
     return "Sorry, I cannot assist with that request."
