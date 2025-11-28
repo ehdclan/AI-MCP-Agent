@@ -42,7 +42,7 @@ It uses a **Zero-Shot Agent** architecture, memory buffers to maintain context a
 
 ```bash
 git clone <repo_url>
-cd LangChain-CSO-Agent
+cd LangChain-Banking-Agent
 ````
 
 2. Create and activate a virtual environment:
@@ -115,16 +115,7 @@ python main.py
 Log in with test credentials:
 
 ```
-🏦 Welcome to Banking Assistant!
-Please login to continue.
-
-Available test accounts:
-------------------------------
-Account: 001 | PIN: 1234 | Name: Ini
-Account: 002 | PIN: 5678 | Name: Bolu
-Account: 003 | PIN: 9012 | Name: Ebuka
-Account: 004 | PIN: 3456 | Name: Daniel
-------------------------------
+Welcome. Please login to continue.
 
 Enter your Account ID: 001
 Enter your PIN: 1234
@@ -168,7 +159,7 @@ Type `exit` to quit or `logout` to switch users.
 ## Project Structure
 
 ```
-LangChain-CSO-Agent/
+LangChain-Banking-Agent/
 ├── main.py                # Main application script with login system
 ├── utils.py               # Helper functions, banking operations, intent classification
 ├── tools.py               # Banking tool definitions for LangChain agent
