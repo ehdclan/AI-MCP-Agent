@@ -1,8 +1,3 @@
-Here is the **markdown (.md) version** of your fully formatted README — ready to paste directly into `README.md`:
-
----
-
-````markdown
 # LangChain Banking Assistant
 
 ## Overview
@@ -227,16 +222,4 @@ LangChain-CSO-Agent/
 * Implement secure credential storage and encryption.
 * Create a web or mobile UI.
 
-```
-
----
-
-If you want, I can also:
-
-✅ Add shields.io badges  
-✅ Add a project logo/header banner  
-✅ Add a table of contents  
-✅ Make the README darker, more visual, or more professional  
-
-Just tell me!
 ```
